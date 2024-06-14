@@ -10,10 +10,7 @@ let server = http.createServer(function (request, respon) {
 
   respon.writeHead(200, { "content-type": "text/html" });
   respon.write(
-    "nama saya adalah " +
-      url_object.nama +
-      "bakerja sebagi" +
-      url_object.pekerjaan
+    `nama saya adalah ${url_object.nama} bakerja sebagai ${url_object.pekerjaan}`
   );
   respon.end();
 });
